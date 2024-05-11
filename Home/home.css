@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-image: url('/Images/home_img.jpg');
+    background-image: url('/CodeCrafters/Images/home_img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -135,3 +135,13 @@
   margin-left: 5%;
 }
 /* Footer section styling ends here */
+
+.images{
+    height:220px;
+    object-fit: cover;
+}
+
+.card{
+     box-shadow: 3px 3px grey;
+}
+
