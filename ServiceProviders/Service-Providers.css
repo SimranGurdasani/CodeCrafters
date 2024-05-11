@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex{
+    flex-direction: row;
+}
+
+.d-col{
+    flex-direction: column;
+}
+
+.headings{
+    text-align: center;
+    justify-content: center
+}
+
+.categories-profiles{
+    justify-content: center;
+}
