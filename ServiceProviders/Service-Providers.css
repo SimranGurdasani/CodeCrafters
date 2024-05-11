@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+.nav-colour{
+    background-color: rgb(159, 159, 250);  
+    position: fixed;
+    top: 0; 
+    z-index: 2;
+    
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+}
+
 .d-flex{
     flex-direction: row;
 }
@@ -68,3 +81,5 @@
   .card-text{
     color: gray;
   }
+
+  
