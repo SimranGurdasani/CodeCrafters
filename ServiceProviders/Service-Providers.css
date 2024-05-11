@@ -15,9 +15,17 @@
 
 .headings{
     text-align: center;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
+    height: 52px;
 }
 
 .categories-profiles{
-    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+.images{
+    height:214px;
+    object-fit: cover;
 }
