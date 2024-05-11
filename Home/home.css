@@ -26,11 +26,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-<<<<<<< HEAD
     background-image: url('/CodeCrafters/Images/home_img.jpg');
-=======
-    background-image: url('/Images/home_img.jpg');
->>>>>>> 3a75927f7a69a705daf4bc52f77287cd59a200c5
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -91,9 +87,12 @@
 
 }
 
-
-
 .images{
-    height:214px;
+    height:220px;
     object-fit: cover;
 }
+
+.card{
+     box-shadow: 3px 3px grey;
+}
+
