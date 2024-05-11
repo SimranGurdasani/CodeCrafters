@@ -6,11 +6,19 @@
 }
 
 .nav-colour{
+<<<<<<< HEAD
+  background-color: rgb(159, 159, 250);  
+  position: fixed;
+  top: 0; 
+  z-index: 2;
+  
+=======
     background-color: #7DB1D6;  
     position: fixed;
     top: 0; 
     z-index: 2;
     
+>>>>>>> a38c083c4bc127d118da3f23cb4f843d35c7f350
 }
 
 .logo{
@@ -24,6 +32,11 @@
 
 .d-col{
     flex-direction: column;
+}
+.rating{
+  margin-top:15px;
+  font-size:14px;
+  color:hsl(36,88%,66%);
 }
 
 .headings{
@@ -74,6 +87,7 @@
   }
 
   .card{
+    width:200px;
     box-shadow: 2px 2px gray;
   }
 
