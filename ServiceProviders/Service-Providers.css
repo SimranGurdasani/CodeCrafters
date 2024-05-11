@@ -29,3 +29,30 @@
     height:214px;
     object-fit: cover;
 }
+
+.modal-dialog input {
+    outline: none;
+    border: 1px solid grey;
+  }
+  .modal-dialog span {
+    font-size: 1.1em;
+  }
+  .button {
+    padding: 6px;
+    border: none;
+    background-color: white;
+  }
+  .submit-btn {
+    background-color: #edd1c0;
+    border-radius: 30px;
+    padding: 8px;
+    width: 25%;
+    font-size: 1.05em;
+  }
+  
+  .brand-logo {
+    width: 20%;
+  }
+  .d-none {
+    display: none;
+  }
