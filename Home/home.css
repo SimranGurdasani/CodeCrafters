@@ -17,13 +17,16 @@
     height: 90px;
 }
 
+.hero-parent{
+    text-align: center;
+}
+
 .hero{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-image: url('/CodeCrafters/Images/home_img.jpg');
-    object-fit: cover;
+    background-image: url('/Images/home_img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -61,6 +64,7 @@
     width:15%;
     font-size: 20px;
     margin-left: 80px;
+    margin-right: 48%;
 }
 
 /* .hero a{
