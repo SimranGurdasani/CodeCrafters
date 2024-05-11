@@ -18,6 +18,20 @@
     height: 90px;
 }
 
+.nav-item>a{
+  text-decoration: none;
+  /* font-weight: bold; */
+}
+
+.nav-link{
+  border-color: white;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-item>a:hover{
+  border-bottom: 2px solid white;
+}
+
 .d-flex{
     flex-direction: row;
 }
@@ -286,3 +300,7 @@
       background-color:hsl(0,0%,100%);
   }
   
+  .category-name{
+    font-size: 23px;
+    font-weight: bold;
+}
