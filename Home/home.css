@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-colour{
+    background-color: rgb(130, 130, 255);  
+    position: fixed;
+    top: 0; 
+    z-index: 2;
+    
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-image: url('/CodeCrafters/Images/home_img.jpg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;  
+}
+
+.hero h2{
+     font-size: 55px;
+     width: 50%;
+     margin-bottom: 20px;
+     margin-left: 80px;
+     text-align: center;
+     margin-top: 100px;
+     color: white;
+}
+
+.hero p{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    color: white;
+}
+
+.btn-view{
+    border: none;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    width:15%;
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+/* .hero a{
+     text-align: center;
+     margin-left: 80px;
+} */
+
+.hero *{
+    z-index: 1;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+
+}
