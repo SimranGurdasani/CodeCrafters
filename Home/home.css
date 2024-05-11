@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +20,21 @@
     width: 90px;
     height: 90px;
 }
+
+.nav-link{
+    border-color: white;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item>a{
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+.nav-item>a:hover{
+    border-bottom: 2px solid white;
+}
+
 
 .hero-parent{
     text-align: center;
@@ -91,6 +109,7 @@
 /* Footer section styling starts here */
 .footer-tagline {
   font-size: 14px;
+  padding:12px;
   font-style: italic;
   position: relative;
   left: 30px;
@@ -292,3 +311,7 @@ body{
     background-color:hsl(0,0%,100%);
 }
 
+.category-name{
+    font-size: 23px;
+    font-weight: bold;
+}
