@@ -25,12 +25,31 @@
     height: 90px;
 }
 
+.nav-item>a{
+  text-decoration: none;
+  /* font-weight: bold; */
+}
+
+.nav-link{
+  border-color: white;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-item>a:hover{
+  border-bottom: 2px solid white;
+}
+
 .d-flex{
     flex-direction: row;
 }
 
 .d-col{
     flex-direction: column;
+}
+.rating{
+  margin-top:15px;
+  font-size:14px;
+  color:hsl(36,88%,66%);
 }
 
 .headings{
@@ -81,6 +100,7 @@
   }
 
   .card{
+    width:200px;
     box-shadow: 2px 2px gray;
   }
 
@@ -294,3 +314,7 @@
       background-color:hsl(0,0%,100%);
   }
   
+  .category-name{
+    font-size: 23px;
+    font-weight: bold;
+}
