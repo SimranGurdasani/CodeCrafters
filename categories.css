@@ -1,0 +1,50 @@
+/* success stories starts */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+img{
+    width:100%;
+}
+.Categories{
+    text-align:center;
+    font-size:35px;
+}
+
+.left{
+    padding:100px;
+}
+
+.left,.right{
+    /* flex-basis:50%; */
+    flex:1;
+}
+
+.page-categories{
+    margin:50px;
+}
+
+.left h2{
+    font-size:30px;
+}
+.left>p{
+    font-size:22px;
+    margin:1.5rem 0px;
+}
+
+.right img{
+    height:80%;
+    width:80%;
+    position:relative;
+    top:10%;
+    right:10%;
+}
+
+.row-reverse .right img{
+    display:flex;
+    left:30%;
+}
+
+/* success stories ends */
