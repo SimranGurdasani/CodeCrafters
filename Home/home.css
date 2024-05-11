@@ -6,7 +6,7 @@
 }
 
 .nav-colour{
-    background-color: rgb(130, 130, 255);  
+    background-color: rgb(159, 159, 250);  
     position: fixed;
     top: 0; 
     z-index: 2;
@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-image: url('/CodeCrafters/Images/home_img.jpg');
+    background-image: url('/Images/home_img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -88,7 +88,7 @@
 
 }
 
-* Footer section styling starts here */
+/* Footer section styling starts here */
 .footer-tagline {
   font-size: 14px;
   font-style: italic;
@@ -144,5 +144,143 @@
 
 .card{
      box-shadow: 3px 3px grey;
+}
+
+.card-text{
+    color: gray;
+}
+
+.brand-logo {
+  width: 40%;
+}
+
+.button {
+  padding: 6px;
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: rgb(147, 147, 255);
+  border-radius: 30px;
+  padding: 8px;
+  width: 25%;
+  font-size: 1.05em;
+}
+
+
+/* footer */
+.footer-logo-img {
+    width: 55%;
+    margin-left: 32px;
+}
+
+.parent-footer-logo{
+    width: 70%;
+}
+
+.container{
+    margin-left: 56%;
+}
+
+.footer-section {
+    /* background-color: rgb(190, 190, 255); */
+    background-color: hsl(229, 100%, 89%);
+    padding: 40px;
+    font-size: 1.12em;
+}
+
+.address-text {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 60%;
+    background-color: white;
+    margin: auto;
+}
+
+/* testimonials */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-size:30px;
+    background:linear-gradient(to right,hsl(229, 100%, 89%),hsl(170,100%,40%));
+}
+
+.container1{
+    max-width:1170px;
+    margin:auto;
+    /* padding:0 15px; */
+}
+.section-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-header .title{
+    font-size:35px;
+    font-weight:600;
+    text-transform:capitalize;
+    color:hsl(0,0%,100%);
+    line-height:1.2;
+}
+
+.testimonials{
+    padding:100px 0;
+}
+
+.testimonials-item{
+    background-color:hsl(0,0%,100%);
+    padding:30px;
+    border-radius:30px;
+}
+.testimonials-item .info{
+    display:flex;
+    align-items:center;
+}
+.testimonials-item img{
+    max-width:80px;
+    border-radius:50%;
+    margin-right:20px;
+    vertical-align:middle;
+}
+.testimonials-item .name{
+    font-size:24px;
+    text-transform:capitalize;
+    font-weight:600;
+    color:hsl(0,0%,0%);
+    line-height:1.2;
+}
+
+.testimonials-item .job{
+    text-transform:capitalize;
+    color:hsl(0,0%,40%);
+}
+
+.testimonials-item p{
+    margin-top:20px;
+    color:hsl(0,0%,40%);
+}
+
+.testimonials-item .rating{
+    margin-top:15px;
+    font-size:14px;
+    color:hsl(36,88%,66%);
+}
+.testimonials .swiper-pagination{
+    position:relative;
+    margin-top:40px;
+    bottom:auto;
+}
+
+.testimonials .swiper-pagination-bullet{
+    height:12px;
+    width:12px;
+    background-color:hsl(0,0%,100%);
 }
 
