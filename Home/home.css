@@ -23,7 +23,6 @@
     flex-direction: column;
     justify-content: start;
     background-image: url('/CodeCrafters/Images/home_img.jpg');
-    object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -81,4 +80,11 @@
     width: 100%;
     background-color: rgba(0,0,0,0.6);
 
+}
+
+
+
+.images{
+    height:214px;
+    object-fit: cover;
 }
