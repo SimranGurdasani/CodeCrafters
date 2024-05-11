@@ -18,6 +18,9 @@
     justify-content: center;
     align-items: center;
     height: 52px;
+    /* font-size: 39px; */
+    /* font-weight: bold; */
+    margin: 23px;
 }
 
 .categories-profiles{
@@ -55,4 +58,13 @@
   }
   .d-none {
     display: none;
+  }
+
+  .card{
+    box-shadow: 2px 2px gray;
+  }
+
+
+  .card-text{
+    color: gray;
   }
