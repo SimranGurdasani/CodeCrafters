@@ -5,7 +5,7 @@
 }
 
 .nav-colour{
-    background-color: rgb(159, 159, 250);  
+    background-color: #7DB1D6;
     position: fixed;
     top: 0; 
     z-index: 2;
@@ -134,6 +134,14 @@
   border: none;
   margin-left: 5%;
 }
+
+.category-profiles{
+    background-color:  #7DB1D6;;
+}
+
+.swiper-pagination{
+    background-color:  #7DB1D6;;
+}
 /* Footer section styling ends here */
 
 .images{
@@ -185,7 +193,7 @@
 
 .footer-section {
     /* background-color: rgb(190, 190, 255); */
-    background-color: hsl(229, 100%, 89%);
+    background-color:  #7DB1D6;
     padding: 40px;
     font-size: 1.12em;
 }
@@ -208,7 +216,7 @@
 
 body{
     font-size:30px;
-    background:linear-gradient(to right,hsl(229, 100%, 89%),hsl(170,100%,40%));
+    background-color:  #7DB1D6;
 }
 
 .container1{
