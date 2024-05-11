@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-image: url('/CodeCrafters/Images/home_img.jpg');
+    background-image: url('/Images/home_img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -169,7 +169,7 @@
 }
 
 .submit-btn {
-  background-color: rgb(147, 147, 255);
+  background-color:  #7DB1D6;
   border-radius: 30px;
   padding: 8px;
   width: 25%;
