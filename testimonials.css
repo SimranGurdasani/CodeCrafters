@@ -9,7 +9,7 @@ body{
     background:linear-gradient(to right,hsl(186,98%,37%),hsl(170,100%,40%));
 }
 
-.container{
+.container1{
     max-width:1170px;
     margin:auto;
     padding:0 15px;
@@ -21,9 +21,9 @@ body{
 
 .section-header .title{
     font-size:35px;
-    font weight:600;
+    font-weight:600;
     text-transform:capitalize;
-    color:hsl(0,0%,100%)
+    color:hsl(0,0%,100%);
     line-height:1.2;
 }
 
