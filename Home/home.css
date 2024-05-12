@@ -162,6 +162,36 @@ html{
 .swiper-pagination{
     background-color:  #7DB1D6;;
 }
+
+.footer-logo-img {
+    width: 55%;
+    margin-left: 32px;
+}
+
+.parent-footer-logo{
+    width: 70%;
+}
+
+/* .container{
+    margin-left: 56%;
+} */
+
+.footer-section {
+    /* background-color: rgb(190, 190, 255); */
+    background-color:  #7DB1D6;
+    padding: 40px;
+    font-size: 1.12em;
+}
+
+.address-text {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 60%;
+    background-color: white;
+    margin: auto;
+}
+
 /* Footer section styling ends here */
 
 .images{
@@ -207,9 +237,9 @@ html{
     width: 70%;
 }
 
-.container{
+/* .container{
     margin-left: 56%;
-}
+} */
 
 .footer-section {
     /* background-color: rgb(190, 190, 255); */
