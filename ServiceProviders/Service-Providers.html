@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="ServiceProviders.js" defer></script>
+    <script>
+      window.onload=appendServiceProvider
+    </script>
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
@@ -23,7 +27,7 @@
   <!-- navbar starts -->
   <nav class="navbar navbar-expand-md nav-colour navbar-light d-flex ">
 
-    <img src="/Images/UrbanEase-removebg-preview.png" alt="" class="logo">
+    <img src="/Images/logo_trial.jpg" alt="" class="logo">
 
     <button class="navbar-toggler bg-white" data-bs-target="#nav" data-bs-toggle="collapse">
         <span class="navbar-toggler-icon"></span>
@@ -36,6 +40,8 @@
             <li class="nav-item"><a href="../categories.html" class="nav-link text-uppercase text-black fs-5 fw-bold px-2">Categories</a></li>
             <li class="nav-item"><a href="../ServiceProviders/Service-Providers.html" class="nav-link text-uppercase text-black fs-5 fw-bold px-2">Service Providers</a></li>
             <li class="nav-item"><a href="../Booking/booking.html" class="nav-link text-uppercase text-black fs-5 fw-bold px-2">Booking</a></li>
+             <li class="nav-item"><a href="../AddServiceProvider/addservice.html" class="nav-link text-uppercase text-black fs-5 fw-bold px-2">Add Service Provider</a></li>
+
         </ul>
       </div>
         <ul>
@@ -63,20 +69,17 @@
         <div class="card-body">
           <h5 class="card-title">William Garcia</h5>
           <p class="card-text">Experience: 5 Years+</p>
-          <p class="card-text">Flexibility:Mumbai</p>
-          <p class="card-text">Age:25 years</p>
+          <p class="card-text">Flexibility:Bangalore</p>
+          <p class="card-text">Age:27 years</p>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
         </div>
-          <!-- <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
-                    data-bs-target="#WilliamGarcia">Proceed</a> -->
-          <button class="btn btn-primary" onclick="appendServiceProvider('William Garcia', '5 Years', 'Flexible')">Proceed</button>
-
-
-           
-        
+           <a href="#" class="btn btn-primary" onclick="redirectToAddServiceProvider('William Garcia', '5 Years', 'Bangalore')">
+              Proceed
+          </a>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -93,9 +96,9 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#AvaHernandez">Proceed</a>
-          
         
         </div>
       </div>
@@ -110,11 +113,9 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
         </div>
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#SophiaMartinez">Proceed</a>
-         
         
         </div>
       </div>
@@ -123,7 +124,7 @@
                     <!-- Cleaning -->
 
                     <!-- Plumbing -->
-    <h1 class="headings d-flex " id="plumber">Plumbing</h1>
+    <h1 class="headings d-flex" id="plumber">Plumbing</h1>
     <div class="categories-profiles d-flex">
     <div class="card" style="width: 18rem;">
         <img src="/Images/Plumbing/Plumber-Sink-201709-003.jpg" class="card-img-top images" alt="...">
@@ -139,9 +140,9 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#JackJohnson">Proceed</a>
-         
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -157,9 +158,10 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#DanielWatts">Proceed</a>
-       
+          
         
         </div>
       </div>
@@ -177,9 +179,10 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#RachelReed">Proceed</a>
-         
+        
         </div>
       </div>
       </div>
@@ -187,7 +190,7 @@
                     <!-- Plumbing -->
 
                     <!-- Carpentry -->
-    <h1 class="headings d-flex " id="carpentary">Carpentry</h1>
+    <h1 class="headings d-flex" id="carpentary">Carpentry</h1>
     <div class="categories-profiles d-flex">
     <div class="card" style="width: 18rem;">
         <img src="/Images/Carpentry/1000_F_251479918_UHTHvo372EtI3xFsJ6EkXpS9RKPnetMy.jpg" class="card-img-top images" alt="...">
@@ -200,12 +203,9 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
         </div>
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#MatthewCarpenter">Proceed</a>
-         
         
         </div>
       </div>
@@ -222,8 +222,10 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#HaleyTimberlake">Proceed</a>
+           
            
         </div>
       </div>
@@ -238,11 +240,9 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
         </div>
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#AshleySawyer">Proceed</a>
-        
         
         </div>
       </div>
@@ -251,7 +251,7 @@
                     <!-- Carpentry -->
 
                     <!-- Appliance Repair -->
-    <h1 class="headings d-flex " id="appliance-repair">Appliance Repair</h1>
+    <h1 class="headings d-flex" id="repair">Appliance Repair</h1>
     <div class="categories-profiles d-flex">
     <div class="card" style="width: 18rem;">
         <img src="/Images/Appliance Repair/appliance_repair.jpeg.jpg" class="card-img-top images" alt="...">
@@ -266,10 +266,11 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#RyanMaintenance">Proceed</a>
+           <!-- Booking Modal -->
        
-        
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -286,10 +287,10 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#JacobTech">Proceed</a>
-        
-        
+          
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -306,10 +307,10 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#AlexAppliance">Proceed</a>
           
-        
         </div>
       </div>
       </div>
@@ -317,7 +318,7 @@
                     <!-- Appliance Repair -->
 
                     <!-- Painting -->
-    <h1 class="headings d-flex " id="painter">Painting</h1>
+    <h1 class="headings d-flex" id="painter">Painting</h1>
     <div class="categories-profiles d-flex">
     <div class="card" style="width: 18rem;">
         <img src="/Images/Painting/painter.jpeg.jpg" class="card-img-top images" alt="...">
@@ -330,12 +331,10 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
         </div>
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#OliverPainter">Proceed</a>
-          
-        
+           
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -350,10 +349,10 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#AmeliaArtiste">Proceed</a>
          
-        
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -369,10 +368,10 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#JamesMural">Proceed</a>
-         
-        
+          
         </div>
       </div>
       </div>
@@ -380,7 +379,7 @@
                     <!-- Painting -->
 
                     <!-- Electrician -->
-    <h1 class="headings d-flex " id="electrician">Electrician</h1>
+    <h1 class="headings d-flex" id="electrician">Electrician</h1>
     <div class="categories-profiles d-flex">
     <div class="card" style="width: 18rem;">
         <img src="/Images/Electrician/electrician.jpeg.jpg" class="card-img-top images" alt="...">
@@ -393,12 +392,10 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
         </div>
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#LucasWatts"  >Proceed</a>
-       
-        
+           
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -414,10 +411,10 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+          
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#EthanWatts"  >Proceed</a>
-        
-        
+          
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -432,11 +429,11 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
         </div>
+         
           <a href="#" class="btn btn-primary"  data-bs-toggle="modal"
                     data-bs-target="#MiaAmpere" >Proceed</a>
         </div>
-       
-        
+      
       </div>
       </div>
     </div>
@@ -453,7 +450,7 @@
     <div class="row">
       <div class="col-sm-6 col-md-6 col-lg-3">
         <div class="parent-footer-logo">
-          <img src="/Images/UrbanEase-removebg-preview.png" class="footer-logo-img" />
+          <img src="/Images/logo_trial.jpg" class="footer-logo-img" />
         </div>
         <div class="footer-tagline">
           UrbanEase: Your Home's Helping Hand
@@ -558,28 +555,8 @@
 
 <!-- footer ends -->
 
-<script>
-  function appendServiceProvider(name, experience, flexibility) {
-    // Create a new table row
-    var newRow = document.createElement('tr');
 
-    // Create table data cells for name, experience, and flexibility
-    var nameCell = document.createElement('td');
-    nameCell.textContent = name;
-    newRow.appendChild(nameCell);
 
-    var experienceCell = document.createElement('td');
-    experienceCell.textContent = experience;
-    newRow.appendChild(experienceCell);
-
-    var flexibilityCell = document.createElement('td');
-    flexibilityCell.textContent = flexibility;
-    newRow.appendChild(flexibilityCell);
-
-    // Append the new row to the cart body
-    document.getElementById('cart-body').appendChild(newRow);
-  }
-</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
