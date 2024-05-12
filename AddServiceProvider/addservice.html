@@ -12,39 +12,99 @@
     />
     <link rel="stylesheet" href="addservice.css" />
   </head>
-  <body>
-    <div class="box-parent d-flex justify-content-center">
-      <div class="box">
-        <div class="d-flex justify-content-center mb-3">
-          <img
-            src="/Images/UrbanEase-removebg-preview.png"
-            alt=""
-            style="height: 102px; width: 93px"
-          />
-        </div>
+<body>
+  <div class="box-parent d-flex justify-content-center">
+    <div class="box">
+      <div class="d-flex justify-content-center mb-3">
+        <img
+          src="/Images/UrbanEase-removebg-preview.png"
+          alt=""
+          style="height: 102px; width: 93px"
+        />
       </div>
     </div>
-    <div class="cart-container">
-      <h1>Add Service Provider</h1>
-      <table class="cart-table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Experience</th>
-            <th>Flexibility</th>
-          </tr>
-        </thead>
-        <tbody id="cart-body">
-          <!-- Cart items will be added here -->
-      </tbody>
-      </table>
-      <div class="checkout-container" >
-        <a href="../payment.html" style="text-decoration: none;">
-        <button class="btn checkout" id="checkoutbtn">Continue</button>
-      </a>
-      </div>
-      
+  </div>
+  <div class="cart-container">
+    <h1>Add Service Provider</h1>
+    <table id="provider-table" class="cart-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Experience</th>
+          <th>Flexibility</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <!-- Cart items will be added here -->
+    </tbody>
+    </table>
+    <div class="checkout-container" >
+      <a href="../payment.html" style="text-decoration: none;">
+      <button class="btn checkout" id="checkoutbtn">Continue</button>
+    </a>
     </div>
+    
+  </div>
 
-  </body>
+  <script>
+
+  function getUrlParams() {
+      var params = {};
+      var queryString = window.location.search.substring(1);
+      var pairs = queryString.split('&');
+      pairs.forEach(function(pair) {
+          var parts = pair.split('=');
+          var key = decodeURIComponent(parts[0]);
+          var value = decodeURIComponent(parts[1]);
+          params[key] = value;
+      });
+      return params;
+  }
+
+  
+  function initializePage() {
+      var params = getUrlParams();
+      var name = params.name || '';
+      var experience = params.experience || '';
+      var flexibility = params.flexibility || '';
+      // appendServiceProvider(name, experience, flexibility);
+      //console.log(localStorage.getItem("name"))
+      //console.log(localStorage.getItem("experience"))
+      //console.log(localStorage.getItem("flexibility"))
+      appendServiceProvider(name, experience, flexibility);
+  }
+
+  function appendServiceProvider() {
+
+      var newRow = document.createElement('tr');
+      console.log(localStorage.getItem("name"))
+      console.log(localStorage.getItem("experience"))
+      console.log(localStorage.getItem("flexibility"))
+
+     var name= localStorage.getItem("name")
+      var experience=localStorage.getItem("experience")
+      var flexibility= localStorage.getItem("flexibility")
+
+      var nameCell = document.createElement('td');
+      nameCell.textContent = name;
+      newRow.appendChild(nameCell);
+
+      var experienceCell = document.createElement('td');
+      experienceCell.textContent = experience;
+      newRow.appendChild(experienceCell);
+
+      var flexibilityCell = document.createElement('td');
+      flexibilityCell.textContent = flexibility;
+      newRow.appendChild(flexibilityCell);
+
+      document.getElementById('provider-table').appendChild(newRow);
+  }
+
+  
+  window.onload = initializePage;
+
+</script>
+
+
+</body>
 </html>
